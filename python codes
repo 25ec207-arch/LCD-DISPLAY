@@ -1,0 +1,277 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMnKEQLAljF2TYjDilteS+M",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25ec207-arch/LCD-DISPLAY/blob/main/python%20codes\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ybDXNEoZDtXH",
+        "outputId": "59d0f8e6-d587-410b-948c-179cf7aa8b8b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "arr = np.array((1,2,3,4,5))\n",
+        "print(arr)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr = np.array([[1,2,3],[3,4,5]])\n",
+        "print(arr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2fpgl09AF0-C",
+        "outputId": "a282166d-0ad5-4444-c9b4-55f112250b8c"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [3 4 5]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = np.array(42)\n",
+        "b = np.array([1,2,3,4,5])\n",
+        "c = np.array([[1,2,3],[3,4,5]])\n"
+      ],
+      "metadata": {
+        "id": "mYm94oOuGlLq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "x = np.full((2,3),50)\n",
+        "print(x)\n",
+        "import numpy as np"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z3WeBMHIKmAE",
+        "outputId": "f50fe035-677b-4d9f-9c15-dc89091dccd9"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[50 50 50]\n",
+            " [50 50 50]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "print(np.arange(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k2Bxoph3K7VK",
+        "outputId": "b718bd8f-241c-45d5-e349-f27e1630ddbe"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0 1 2 3 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "print(np.linspace(0,10,num=3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "coC9jtsYLXrJ",
+        "outputId": "e506aae4-a513-4a34-e222-76e3524e08cd"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 0.  5. 10.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "x = np.ones(2,dtype=np.float64)\n",
+        "print(x)\n",
+        "\n",
+        "# Calculate the mean of x\n",
+        "mean_x = x.mean()\n",
+        "print(f\"Mean of x: {mean_x}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fg_6LuggMEQ4",
+        "outputId": "800b852a-83e9-4958-e8c2-eff1a63e65bf"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1. 1.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr = np.array([2,1,5,7,8,9])\n",
+        "x =  np.concatenate((x, arr),axis = 0)\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KsW-z78oMTYA",
+        "outputId": "26fd7e21-132c-4ffa-c0d0-861fb408b2bd"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1. 1. 2. 1. 5. 7. 8. 9.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "x = np.array([[3,4,5],[5,6,7]])\n",
+        "a = x.mean(axis = 1)\n",
+        "b = x.mean(axis = 0)\n",
+        "print(a)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A-SzvKC8Pdl2",
+        "outputId": "c0cb5c98-acba-472e-8a1c-87459ed68e46"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[4. 6.]\n",
+            "[4. 5. 6.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "print(pd.__version__)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6_0CIk-ZREf8",
+        "outputId": "e3350945-3fc2-4e4b-b703-69eac9d9760e"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2.2.2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
